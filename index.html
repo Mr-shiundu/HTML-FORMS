@@ -3,11 +3,11 @@
 <meta charset="UTF-8">
 <meta name="viewpoint" content="width=device-width, initial-scale-0.1">
 <link href="index.css" class="css">
-<title>Plp [Forms]</title>
+<title>Register</title>
 
 <body>
 
-<h1><b><I>PLP Forms Assignment</I></b></h1>
+<h1><b><I>Register here</I></b></h1>
 
     <form>
 
@@ -21,48 +21,66 @@
         <br>
         <br>
 
-        <label for="email">Email:</label>
+    <div>
+        <label for="bdate">Birthdate:</label>
+        <input 
+        type="date" 
+        id="bdate" 
+        name="bdate">
+    </div>
+        <br>
+        
+        <div>
+            <label for="address">Address:</label>
+            <input 
+            type="address" 
+            id="address" 
+            name="address">
+        </div>
+        <br>
+
+
+        <label for="email">Email Address:</label>
         <input 
         type="text"
         id="email"
         name="email"
         placeholder="Imranshiundu@gmail.com">
         <br>
-    
-   
-    <br>
+           <br>
+
+    <div>
+        <label for=""></label>
+    </div>
 
 
 
     <fieldset>
-        <label>Choose Your Preferred Payment Method:</label>
+        <label>Gender:</label>
         <br><br>
 
         <input 
         type="radio" 
-        id="creditcard"
-        name="Paymentmethod" 
-        value="creditcard">
+        name="title" 
+        value="Male">
 
-        <label for="creditcard">Credit Card</label>
+        <label>Male</label>
         <br><br>
 
         <input 
         type="radio" 
-        id="paypal"
-        name="Paymentmethod" 
-        value="paypal">
+        name="title" 
+        value="Female">
 
-        <label for="paypal">PayPal</label>
+        <label>Female</label>
         <br><br>
 
         <input 
         type="radio" 
-        id="bitcoin" 
-        name="Paymentmethod" 
-        value="bitcoin">
+        name="title" 
+        value="prefer not to say">
 
-        <label for="bitcoin">Bitcoin</label>
+        <label>Prefer Not To Say</label>
         <br>
     </fieldset>
     <br>
@@ -71,54 +89,47 @@
     
        
     <fieldset>
-        <label>Interests:</label>
+        <label>Which courses are specializing on:</label>
         <br><br>
 
 
         <input 
         type="checkbox" 
-        id="music" 
-        name="Interest" 
-        value="music">
+        id="course" 
+        name="title" 
+        value="course">
 
-        <label for="music">Music</label>
+        <label for="course">Website Development</label>
         <br><br>
 
         <input 
         type="checkbox" 
-        id="sports" 
-        name="Interest" 
-        value="sports">
+        id="course2" 
+        name="title" 
+        value="course">
 
-        <label for="sports">Sports</label>
+        <label for="course2">Dart & Flutter</label>
         <br><br>
 
         <input 
         type="checkbox" 
-        id="reading" 
-        name="interest" 
-        value="reading">
+        id="course3" 
+        name="title" 
+        value="course">
 
-        <label for="reading">Reading</label>
+        <label for="course3">CyberSecurity</label>
         <br>
 
     </fieldset>
 
-    <br><br>
-    <label for="name">Password;</label>
-        <input 
-        type="password" 
-        id="password" 
-        name="password" 
-        placeholder="Enter Your Password"
-        aria-describedby="password-hint">
-
-        <div id="password-hint">
-     Password must be atleast 8 characters long.
-        </div>
-        <br><br>
-
+    <br>
+    <br>
         <button type="submit">Submit</button>
+
+        <br>
+        <br>
+            <button type="reset">cancel</button>
+    
 
     </form>
 
